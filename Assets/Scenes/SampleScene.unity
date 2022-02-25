@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 783238012}
   - component: {fileID: 783238011}
   - component: {fileID: 783238013}
+  - component: {fileID: 783238014}
   m_Layer: 0
   m_Name: Space Ship
   m_TagString: Untagged
@@ -283,7 +284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783238010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.26, y: 0, z: 0}
+  m_LocalPosition: {x: -7.47, y: -1.91, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -302,3 +303,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &783238014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783238010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 522cb42444071be4b86ff94325a7fa37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2346404667917267694, guid: 73cf40b04c16b9f42ac4dda21c3e0dab, type: 3}
+  offset: {x: 0.9, y: 0, z: 0}
+  time: 0
