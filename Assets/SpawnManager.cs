@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject astroidPrefab;
     public float time;
+    
    
     void Update()
     {
