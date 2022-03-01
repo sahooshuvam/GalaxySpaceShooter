@@ -5,10 +5,12 @@ using UnityEngine;
 public class BulletMovement : MonoBehaviour
 {
     public float bulletSpeed;
-    // Start is called before the first frame update
-    void Start()
+    private AudioSource audioSource;
+    public AudioClip explosionSound;
+
+    private void Start()
     {
-        
+        audioSource = GameObject.Find("SoundManager").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,9 @@ public class BulletMovement : MonoBehaviour
         if (collision.gameObject.tag == "Asteroid")
         {
             Destroy(collision.gameObject);
+            audioSource.clip = explosionSound;
+            audioSource.Play();
+
         }
         
     }

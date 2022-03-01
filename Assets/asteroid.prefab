@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 085dc9b92d7064f24868ea4e8f8919a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,8 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   astroidSpeed: 5
   score: {fileID: 0}
-  explosionSound: {fileID: 0}
-  audioClip: {fileID: 0}
+  animation: {fileID: 0}
 --- !u!60 &2148539281180154382
 PolygonCollider2D:
   m_ObjectHideFlags: 0

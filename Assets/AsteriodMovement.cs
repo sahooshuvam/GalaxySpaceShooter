@@ -6,15 +6,12 @@ public class AsteriodMovement : MonoBehaviour
 {
     public float astroidSpeed;
     public ScoreManager score;
-    public AudioSource explosionSound;
-    public AudioClip audioClip;
 
     private void Start()
     {
         score = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
 
     }
-    // public AudioSource bombSound;
     // Update is called once per frame
     void Update()
     {
@@ -26,10 +23,7 @@ public class AsteriodMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
-        explosionSound.Play();
-        score.ScoreCalculator(10);
-        
-
+        score.ScoreCalculator(10);       
     }
     private void OnBecameInvisible()
     {
